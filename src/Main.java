@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         /*
         // 2 задание
         Scanner in = new Scanner(System.in);
@@ -11,6 +12,7 @@ public class Main {
                 "и 2 нечетные (3 и 5).)");
         System.out.println("Введите число");
         int number = in.nextInt();
+
         int temp = number;
         int size =  Integer.toString (number).length();
         int[] array = new int[size];
@@ -30,9 +32,9 @@ public class Main {
         }
         System.out.println("Четных: " + countCh + " " + "Нечетных: " + counNeCh);
         in.close();
-        */
 
-        /*
+
+
         // 3 задание
         Scanner in = new Scanner(System.in);
         System.out.println("3.Составьте программу, которая вычисляет сумму чисел от 1 до n." +
@@ -46,7 +48,7 @@ public class Main {
             N_Max_Value--;
         }
         System.out.println(result);
-         */
+
         // 1 задание
 
         Scanner in = new Scanner(System.in);
@@ -69,6 +71,33 @@ public class Main {
 
 
 
+        // 1.Программа, проверяющая, являются ли числа a, b, c
+        // сторонами треугольника, и если являются, вычисляющая площадь этого треугольника.
+        // При проверке необходим учитывать, что длины сторон треугольника должны быть положительными,
+        // и сумма длин двух сторон больше длины третьей стороны.
 
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введите число a");
+        double a = in.nextInt();
+        System.out.println("Введите число b");
+        double b = in.nextInt();
+        System.out.println("Введите число c");
+        double c = in.nextInt();
+
+
+
+
+
+
+
+    }
+    static double P_Treug(double a, double b, double c){
+        return (a + b + c) / 2;
+    }
+    static double S_Treug(double a, double b, double c, double p){
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
+
+         */
     }
 }
